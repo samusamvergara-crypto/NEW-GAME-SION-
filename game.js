@@ -7,7 +7,7 @@ let vw=0,vh=0;
 function resize(){vw=innerWidth;vh=innerHeight;canvas.width=Math.floor(vw*DPR);canvas.height=Math.floor(vh*DPR);canvas.style.width=vw+'px';canvas.style.height=vh+'px';ctx.setTransform(DPR,0,0,DPR,0,0)}
 addEventListener('resize',resize);resize();
 
-const sprite = new Image(); sprite.src='assets/sion_sprites.png';
+const sprite = new Image(); sprite.src='sion_sprites.png';
 const WORLD={w:1800,h:1250};
 const player={x:850,y:720,r:22,speed:210,dir:'down',moving:false,walkT:0};
 const input={x:0,y:0};
